@@ -1,0 +1,59 @@
+
+#hangmantitlerow{
+ width: 100%;
+ background-color: grey;
+ opacity: .6;
+ border: solid 3px black;
+}
+#head{
+	font-size: 400%;
+	text-align: center;
+	padding: 5%;
+
+}
+#container{
+	padding-left:  10%;
+	padding-right: 10%;
+
+}
+#background{
+
+
+
+}
+#htmlguess{
+	padding-left: 4%;
+	padding-right: 4%;
+	font-size: 200%;
+	float:left;
+}
+#letterspressed{
+	font-size: 200%;
+	padding-left: 4%;
+	padding-right: 4%;
+	
+
+}
+.blanks{
+
+}
+.row{
+	width: 100%;
+ 	background-color: grey;
+ 	opacity: .6;
+ 	border: solid 3px black;
+
+}
+content{
+	width: 100%;
+	height: 100%;
+	
+
+}
+body{
+	background-image: url(../images/scotch.jpg);
+	background-size: cover;
+
+	width: 100%;
+	height: 100%;
+}
