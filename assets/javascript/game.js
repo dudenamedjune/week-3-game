@@ -23,6 +23,12 @@
             guesses = 5;
             score=0;
             charlist = scotchlist[wins].split("");
+          } if (wins < 5){
+              charlist = scotchlist[wins].split("");
+          }if (wins === 5){
+              wins = 0;
+              loses = 0;
+              charlist = scotchlist[wins].split("");
           }
 
           for (i in charlist){
@@ -40,13 +46,28 @@
           }
         }
 
+      
+
           if(guesses === 0){
             loses ++;
             guesses = 5;
             score = 0;
-            charlist = scotchlist[loses].split("");
-          }
+            }if (loses < 5){
+              charlist = scotchlist[loses].split("");
+            }if (loses === 5){
+                loses = 0;
+                wins = 0;
+                charlist = scotchlist[loses].split("");
+            }
+
+
+
+          //enter html in guesses id
           $("#guesses").html(guesses);
+          //enter html in loses id epty div
+          $("#loses").html(loses);
+          //enter wins in id win inside epty div
+          $("#wins").html(wins);
 
         console.log(guesses);
         console.log(score);

@@ -5,14 +5,16 @@
 	<script type="text/javascript" src="assets/javascript/game.js"></script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>Hangman</title>
 </head>
 	<body>
 		<!--create row for hangman title -->
-		<div id="hangmantitlerow">
+		<div class="row">
 			<!--Hangman image or font title-->
-			<div id=head>
+			<div id="head" col="col-md-12">
 				<h1>Hangman</h1>
 				
 			</div>
@@ -23,10 +25,10 @@
 		<!--container-->
 		<div id="container">
 			<!--main content row-->
-			<content id="background">
+			<content class="row">
 				<!--press any key to start-->
 				<div class="row">
-				<h2>Press any key to start</h2>
+					<h2 class="center">Press any key to start</h2>
 					
 				</div>
 
@@ -40,27 +42,29 @@
 				<div class="row">
 
 					<!--col for # of remaining guesses-->
-					<div id="htmlguess">
+					<div class="col-md-4">
 						<h3>Remaing gueses:<div id="guesses"></div></h3>
 						
 					</div>
 
 					<!-- col for letters already guesses-->
-					<div id="letterspressed">
+					<div class="co-md-4">
 						<h3>Letters already pressed</h3>
 						
 					</div>
 
 					<!-- col for wins and loses-->
-					<div>
+					<div class="col-md-4">
 
 						<!--row for wins-->			
-						<div>
+						<div class="row">
+							<p>Wins:<div id="wins"></div></p>
 							
 						</div>
 
 						<!--row for loses-->
-						<div>
+						<div class="row">
+							<p>Loses:<div id="loses"></div></p>
 							
 						</div>
 					</div>

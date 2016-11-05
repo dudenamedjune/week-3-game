@@ -12,15 +12,15 @@ var scotchlist = ["jwalker", "macallan", "ardbeg", "glenlivet", "glenfiddich"];
 	document.onkeyup = function(event) {
         //store pressd key as userguess and convert to lower case
 		    var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
-        showunderscore();
+
 
 
         function showunderscore(){
           console.log(charlist);
           for(i in charlist){
            var x = $("<div>");
-           x.addClass("blanks")
-           x.append("#holders")
+           x.addClass("blanks");
+           x.append("#holders");
 
           
           }
@@ -79,5 +79,7 @@ var scotchlist = ["jwalker", "macallan", "ardbeg", "glenlivet", "glenfiddich"];
         
 
           };
+
+
   };
           
